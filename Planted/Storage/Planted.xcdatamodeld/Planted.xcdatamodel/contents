@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="22G313" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PlantItemEntity" representedClassName="PlantItemEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="careLevel" optional="YES" attributeType="String"/>
+        <attribute name="commonName" optional="YES" attributeType="String"/>
+        <attribute name="cycle" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="detailImage" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="maintenence" optional="YES" attributeType="String"/>
+        <attribute name="origin" optional="YES" attributeType="String"/>
+        <attribute name="otherName" optional="YES" attributeType="String"/>
+        <attribute name="plantFamily" optional="YES" attributeType="String"/>
+        <attribute name="plantType" optional="YES" attributeType="String"/>
+        <attribute name="propagation" optional="YES" attributeType="String"/>
+        <attribute name="refId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="scientificName" optional="YES" attributeType="String"/>
+        <attribute name="smallThumbnail" optional="YES" attributeType="String"/>
+        <attribute name="soil" optional="YES" attributeType="String"/>
+        <attribute name="sunlight" optional="YES" attributeType="String"/>
+        <attribute name="watering" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="WateringEntity" representedClassName="WateringEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nextWatering" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="refId" optional="YES" attributeType="Integer 64" valueTransformerName="NSSecureUnarchiveFromData" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="repeatWatering" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+</model>
